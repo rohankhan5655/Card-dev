@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(47, 88%, 63%);
+    font-family:"Figtree", sans-serif;
+  }
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 250px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    border-top: 1px solid hsl(0, 0%, 7%);
+    border-left:1px solid hsl(0, 0%, 7%);
+    box-shadow: 5px 5px 0px black; /* Add shadow to the right and bottom */
+
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.img img {
+    margin-top: 15px;
+    width: 90%;
+ border-radius: 10px;   
+}
+.learn {
+    border-radius: 2px;
+    background-color: hsl(47, 88%, 63%); 
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 15px;  
+    
+}
+.learn > p {
+    padding: 0px 2px 0px 3px;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+.publish p {
+font-size: 12px;
+margin-left: 15px;
+font-weight: 500;
+color:  hsl(0, 0%, 7%);
+}
+.heading {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.heading > P {
+    font-size: 16px;
+    font-weight: 800;
+}
+.content {
+    margin-top: 10px;
+    margin-left: 15px;
+    
+    margin-right: 15px;
+    
+}
+.content> p {
+    font-size: 11px;
+    font-weight: 500;
+    color:  hsl(0, 0%, 42%);
+}
+.author-p {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 13px;
+}
+.author-p > img {
+    width: 25px;
+}
+.author-p > span {
+    margin-left: 8px;
+    font-size: 10px;
+    font-weight: 800;
+}
+.card:active {
+    cursor: pointer;
+.heading p{
+    color: hsl(47, 88%, 63%);
+    font-weight: 900;
+}
+}
+.card:hover {
+    cursor: pointer;
+    .heading p{
+        color: hsl(47, 88%, 63%);
+        font-weight: 900;
+    }
+}
+.code a {
+    text-decoration: none;
+
+}
+.code {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.code span,a {
+    color: black;
+}
+.code a :active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color:deepskyblue;
+
+}
+.code a :hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color:deepskyblue;
+
+}
+/* Media query for responsve */
+@media only screen and (max-width:300px) {
+    .card {
+        width: 80vw;
+    }
+    .learn {
+        width: 45px;
+    }
+    .learn>p {
+        font-size: 9px;
+    }
+    .publish > p {
+    font-size: 10px;
+    }
+    .heading > p {
+        font-size:12px;
+    }
+    .content > p {
+        font-size: 10px;
+    }
+    .author-p img {
+        width: 18px;
+    }
+    .author-p > span {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width:280px) {
+    .content > p {
+        font-size: 8px;
+    }
+    .content {
+        margin-left: 10px;
+    }
+    .heading{
+        margin-left: 10px;
+    }
+    .publish> p {
+        margin-left: 10px;
+    }
+    .learn {
+        margin-left: 10px;
+    }
+    .author-p {
+margin-left: 10px;
+}
+}
+@media only screen and (max-width:232px) {
+    .content>p {
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width:214px){
+    .heading>p {
+        font-size: 10px;
+    }
+    .content>p {
+        font-size: 6px;
+    }
+    .publish> p {
+        font-size: 7px;
+    }
+    .learn {
+        width: 40px;
+        height: 15px;
+    }
+    .learn>p {
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .code  {
+        position: relative;
+    text-align: center;
+ bottom: 50px;
+    }
+}
+@media only screen and (max-width:350px) {
+    .code {
+    display: none;
+    }
+}
